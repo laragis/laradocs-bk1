@@ -6,20 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'LaraDocs',
+  tagline: 'My awesome docs',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://laradocs.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'laragis', // Usually your GitHub org/user name.
+  projectName: 'laradocs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -59,7 +59,7 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
@@ -70,12 +70,12 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          {type: 'docSidebar', sidebarId: 'dev', label: 'Dev'},
+          {type: 'docSidebar', sidebarId: 'db', label: 'DB'},
+          {type: 'docSidebar', sidebarId: 'devops', label: 'DevOps'},
+          {type: 'docSidebar', sidebarId: 'gis', label: 'GIS'},
+          {type: 'docSidebar', sidebarId: 'ai', label: 'AI'},
+          {type: 'docSidebar', sidebarId: 'os', label: 'OS'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/laragis/laradocs',
