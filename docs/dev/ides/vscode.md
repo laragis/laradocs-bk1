@@ -15,6 +15,7 @@
 - [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) 4.2M
 - [Remote - Tunnels](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server)
 - [Remote Explorer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer)
+- [BlackBox AI](https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox) 1.1M
 
 ### Optional
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) 68.5M
