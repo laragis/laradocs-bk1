@@ -126,8 +126,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: '9GROLPOP0X',
-        apiKey: '629dd83a41b54e7cd587812ed7586bbf',
+        appId: 'JHZH3SPE77',
+        apiKey: '93af816b5b7be567c347df2795c66122',
         indexName: 'prod_Laradocs',
         contextualSearch: true,
       },

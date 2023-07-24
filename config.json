@@ -1,5 +1,5 @@
 {
-    "index_name": "laradocs",
+    "index_name": "prod_Laradocs",
     "start_urls": [
       "https://laradocs.netlify.app/"
     ],
