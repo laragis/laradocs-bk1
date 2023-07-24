@@ -70,6 +70,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {type: 'docSidebar', sidebarId: 'design', label: 'Design'},
           {type: 'docSidebar', sidebarId: 'dev', label: 'Dev'},
           {type: 'docSidebar', sidebarId: 'db', label: 'DB'},
           {type: 'docSidebar', sidebarId: 'devops', label: 'DevOps'},
