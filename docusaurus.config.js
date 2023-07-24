@@ -89,15 +89,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {
@@ -128,11 +119,17 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} LaraDocs, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        appId: '9GROLPOP0X',
+        apiKey: '629dd83a41b54e7cd587812ed7586bbf',
+        indexName: 'prod_Laradocs',
+        contextualSearch: true,
       },
     }),
 };
