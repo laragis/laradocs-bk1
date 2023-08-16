@@ -1,4 +1,4 @@
-# Basemaps
+# Basemap - Raster Tile
 
 ## OSM Links
 
@@ -15,6 +15,7 @@
 - https://mapproxy.org/docs/latest/install.html
 - https://github.com/Overv/openstreetmap-tile-server
 - https://github.com/maptiler/tileserver-php
+- https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services
 
 ## Layers
 
@@ -31,7 +32,7 @@
 | landusages                           | landusages        |             |
 | waterareas                           | waterareas        |             |
 | waterways                            | waterways         |             |
-| builtup_area     [index.html](..%2F..%2F..%2F..%2F..%2Findex.html)                    | buildup           |             |
+| builtup_area                         | buildup           |             |
 | ne_10m_admin_0_boundary_lines_land   | all_boundaries    |             |
 | osm_boundary                         | boundaries        |             |
 | osm_transport_areas                  | transport_areas   |             |
@@ -85,7 +86,7 @@ VN
 
 LayerGroups:
 - osm_cust_bg
-  - osm:ne_10m_bathymetry 
+  - osm:ne_10m_bathymetry
   - osm:simplified_water_polygons
   - osm:water_polygons
   - osm:land_polygons
@@ -133,3 +134,15 @@ Check
 
 
 
+###
+
+```shell
+wget https://download.geofabrik.de/asia/vietnam-latest.osm.pbf
+docker volume create openstreetmap-data
+time docker run -v ./vietnam-latest.osm.pbf:/data.osm.pbf -v openstreetmap-data:/var/lib/postgresql/12/main overv/openstreetmap-tile-server:1.3.10 import
+docker run -p 8080:80 -v openstreetmap-data:/var/lib/postgresql/12/main -d overv/openstreetmap-tile-server:1.3.10 run
+```
+
+https://github.com/wcedmisten/docker-openstreetmap-stack/blob/main/docker-compose.yml
+
+https://xranks.com/alternative/nominatim.org
